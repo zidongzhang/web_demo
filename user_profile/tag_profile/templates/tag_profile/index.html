@@ -1,0 +1,32 @@
+{% load static %}
+
+<html>
+<head>
+<script src="{% static 'tag_profile/tag_profile.js' %}"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<style>
+h1
+{
+text-shadow: 5px 5px 5px #A9A9A9;
+}
+</style>
+<body>
+
+        <h1>用户标签搜索</h1>
+        <h4>请输入用户信息</h4>
+        <form id="tag_search_form" onsubmit=false>
+                <div>
+                        <input type="text" placeholder="用户uuid" id="uuid"></input>
+                        <input type="button" value="搜索" onclick="tag_search()"></input>
+                </div>
+                <div id="tag_result">
+		</div>
+		<div id="tag_result_2">
+                </div>
+		<div id="errno"> 
+		</div>
+        </form>
+</body>
+</html>
+
